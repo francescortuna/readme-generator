@@ -1,49 +1,25 @@
 
-  # **Title** [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  # README Generator
   
-  ## **Description**
+  ## Description
 
-  Description
+  - This project allows a user to input information about their application and automatically generates a README using that information.
+  - Project also allows user to select from a list of licenses.
 
-  ## **Table of Contents**
-
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Contributing](#contributing) 
-  - [License](#license)
-  - [Tests](#tests)
-  - [Questions](#questions)
-
-  ## **Installation**
+  ## Installation
 
   To install necessary dependencies, run the following command:
   ```
   npm i
   ```
 
-  ## **Usage**
+  ## Usage
 
-  Test
-  
-    
-  ## **License**
-    
-  This application is covered under the Apache license.
+  Run the following command to use the application:
 
-    
-  ## **Contributing**
-  
-  Test
-  
-  ## **Tests**
-
-  To run tests, run the following command:
   ```
-  npm test
+  node index.js
   ```
 
-  ## **Questions**
-
-  Here is my [GitHub Profile](github.com/francescortuna)
-
-  I can be reached by email, at francescortuna@outlook.com
+  Here is a video showcasing how it works:
+  ![sample video](./utils/sample.gif)

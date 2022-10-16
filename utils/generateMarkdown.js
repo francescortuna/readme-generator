@@ -1,6 +1,6 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
+function renderLicenseBadge(license) { // If statement to see what license user chose
   if(license == "MIT"){
     licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
   } else if(license == "GPLv3"){
@@ -14,7 +14,7 @@ function renderLicenseBadge(license) {
   } else if(license == "LGPLv3") {
     licenseBadge = `[![License: LGPL v3](https://img.shields.io/badge/License-LGPL_v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)`;
   } else {
-    licenseBadge = ``;
+    licenseBadge = ``; // If application is unlicensed
   }
 
   return licenseBadge;
@@ -24,10 +24,10 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if(license == "Unlicensed"){
-    licenselLink = ``;
+    licenselLink = ``; // If application is unlicensed, empty string
   } else {
     licenselLink = `
-  - [License](#license)`;
+  - [License](#license)`; // Inputs license section in table of contents if there is license
   }
 
   return licenselLink;
@@ -37,7 +37,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if(license == "Unlicensed") {
-    licenseSection = ``;
+    licenseSection = ``; // Empty string if application is unlicensed
   } else {
     licenseSection = `
     
@@ -45,7 +45,7 @@ function renderLicenseSection(license) {
     
   This application is covered under the ${license} license.
 
-    `;
+    `; // Inputs license section if there is license
   }
   return licenseSection;
 }
