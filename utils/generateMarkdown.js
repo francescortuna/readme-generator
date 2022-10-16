@@ -73,7 +73,10 @@ function generateMarkdown(data) {
 
   ## **Installation**
 
+  To install necessary dependencies, run the following command:
+  \`\`\`
   ${data.install}
+  \`\`\`
 
   ## **Usage**
 
@@ -85,11 +88,14 @@ function generateMarkdown(data) {
   
   ## **Tests**
 
+  To run tests, run the following command:
+  \`\`\`
   ${data.test}
+  \`\`\`
 
   ## **Questions**
 
-  Here is my [GitHub Profile](${data.githubLink})
+  Here is my [GitHub Profile](github.com/${data.github})
 
   I can be reached by email, at ${data.email}
 `;

@@ -18,13 +18,13 @@ const questions = [
     {
         type: 'input',
         name: 'install',
-        message: 'What are the steps required to install your project?'
+        message: 'What command should be run to install dependencies?',
+        default: 'npm i'
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'Provide instructions for use.',
-        default: 'Run node index.js in command line.'
+        message: 'Provide instructions for use.'
     },
     {
         type: 'list',
@@ -40,12 +40,13 @@ const questions = [
     {
         type: 'input',
         name: 'test',
-        message: 'What are the tests for your application?'
+        message: 'What command should user enter to run tests?',
+        default: 'npm test'
     },
     {
         type: 'input',
-        name: 'githubLink',
-        message: 'Enter GitHub profile link.'
+        name: 'github',
+        message: 'What is your GitHub username?'
     },
     {
         type: 'input',
@@ -57,7 +58,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, generateMarkdown(data), (err) =>
-        err ? console.error(err) : console.log('Success!'));
+        err ? console.error(err) : console.log('README generated.!'));
 }
 
 // TODO: Create a function to initialize app
